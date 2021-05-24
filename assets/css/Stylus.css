@@ -1,0 +1,20 @@
+/*formulario de cadastro de usuarios*/
+	.coluna-a{
+		border-top: 3px solid #D0D0D0;
+        margin: 60px;
+	}
+	.form_cadasrto_usuario{
+		border-top: 3px solid #D0D0D0;          
+	}
+	.campo_a{
+		border-top: 3px solid #D0D0D0; 
+		margin: 10px;   
+		padding: 14px 15px 3px 15px;      
+	}
+	
+	.boton{
+		padding: 14px 13px 5px 15px; 
+		border: 3px solid silver; 
+		margin-top:1	0px; 
+	}
+/************************************************/

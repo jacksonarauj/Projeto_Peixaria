@@ -1,0 +1,339 @@
+
+ *{ margin:0; padding:0; box-size; border-box;
+	  
+  }
+  .center{
+	  max-width:1100px;
+	  max-height:111px;
+	  margin:0 auto;
+	  padding:0,2%;
+  }
+  header{
+  	position:absolute;
+	  
+	  left:0;
+	  top:0;
+	  width:100%;
+	  height:203px;
+	  padding:0px 0;
+	  padding:0px ;
+	  text-align:center;
+	  background:#7AC5CD;
+	  border: 3px outset #1E90FF; 
+  }
+  header li{
+	  display:inline-block;
+	  margin:0 10px;
+	  position:relative;
+	  top:-110px;
+	  left:-118px;
+  }
+  header a {
+	  text-decoration:none;
+	  color:white;
+  }
+  .conteudo{
+	  height:210px;
+  }
+  section.content{
+	  margin-top:150px;
+
+  }
+  #botao-home{
+	  background-color:blue;
+  }
+  .logo{
+	  width:350px ;
+	  height:145px;
+	  background-color:green;
+	  position:relative;
+	  top:0px;
+	  left:-118px;
+  }
+  img{border-radius: 5px color:transparent;
+  
+  }
+  .bem-vindo{
+  	width:800px;
+  	height: 100px;
+	  background-color:transparent;
+	   position:relative;
+	  top:-125px;
+	  left:240px;
+	 
+  }
+  i {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+ 
+}
+  #botao-cadastrar1{
+ 	  position:absolute;
+      top:30px;
+	  left:-80px;
+	  background-color:black;
+	  width:95px;
+	  height:25px;
+	  padding:0px;
+	  box-shadow:0 2px 0 silver;
+	 
+  } #botao-cadastrar2{
+ 	  position:absolute;
+      top:30px;
+	  left:20px;
+	  background-color:black;
+	  width:50px;
+	  height:25px;
+	  padding:0px;
+	  box-shadow:0 2px 0 silver;
+	 
+  }
+  #botao-cadastrar3{
+ 	  position:absolute;
+      top:30px;
+	  left:-10px;
+	  background-color:black;
+	  width:50px;
+	  height:25px;
+	  padding:0px;
+	  box-shadow:0 2px 0 silver;
+	 
+  }
+  
+  .menu{
+	   width:800px ;
+	  height:100px;
+	   background-color:transparent;
+	   position:absolute;
+	   left:470px;
+  }
+  .icone-entrar img{border-radius:20px;position:absolute;left:-5px;top:-15px;}
+  .icone-entrar font{color:white;}
+  .icone-entrar2 img{border-radius:20px;position:absolute;left:-5px;top:-15px;}
+  .icone-entrar2 font{color:white;}
+  body{
+	 
+	padding:0px;
+	margin:0px;
+}
+.coluna-a{
+	background-color:#7AC5CD;
+	width:1130px;
+	height:1110px;
+	float:right;
+
+
+}
+
+/*promoçao*/
+.peixe-a{
+	background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	position:relative;
+	left:5px;
+
+}
+.peixe-b{
+    background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	position:relative;
+	left:308px;
+	top:-350px;
+}
+.peixe-c{
+    background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	position:relative;
+	left:614px;
+	top:-700px;
+}
+.peixe-d{
+	 background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	position:relative;
+	left:905px;
+	top:-1050px;
+	
+}
+/*fim promoçao*/
+.peixe-e{
+	 background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+    margin-top:30px;
+    position:relative;
+	left:5px;
+	top:-1050px;
+}
+.peixe-f{
+	background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	margin-top:30px;
+	position:relative;
+	left:308px;
+	top:-1430px;
+}
+
+.peixe-k{
+	background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	margin-top:30px;
+}
+.peixe-l{
+	background-color:silver;
+	width:220px;
+	height:350px;
+	border: 5px outset #cccccc;
+	margin-top:30px;
+	
+}
+.menulateral{
+	position:fixed;
+	width:200px;
+	height:220px;
+	left:5px;
+	top:210px;
+	background:#7AC5CD;
+	border: 3px outset #cccccc;
+}
+.search{
+	position: fixed;
+	top:215px;
+	width:0px;
+	height:0px;
+}
+.search2{
+	position: fixed;
+	top:285px;
+	width:0px;
+	height:0px;
+}
+.search3{
+	position: fixed;
+	top:365px;
+	width:0px;
+	height:0px;
+}
+h1{
+	 font-size:20px;
+}
+.container-cadastro{
+width:400px;
+height:600px;
+border: 5px outset #cccccc;
+position: relative;
+left:500px;
+
+ align-items: center;
+}
+ .rodape{
+	 width:1350px;
+	 height:150px;
+	 background:black;
+	  border: 1px outset #1E90FF; 
+	  position:absolute;
+	  bottom:-900px;	 
+ }
+.coluna-b{
+	background-color:#7AC5CD;
+	width:1350px;
+	height:790px;
+	float:right;
+	position:relative;
+	top:203px;
+} 
+.coluna-c{
+	background-color:#7AC5CD;
+	width:1350px;
+	height:790px;
+	float:right;
+	position:relative;
+	top:175px;
+} 
+.rodape2{
+	 width:1350px;
+	 height:150px;
+	 background:black;
+	  border: 1px outset #1E90FF; 
+	  position:absolute;
+	  bottom:-350px;
+	  left:0px;
+ }
+ #formulario{
+	 width:400px;
+	 height:500px;
+	 border: 3px outset silver;
+	 position:absolute;
+	 top:220px;
+	 left:525px;
+ }
+ #formulario-login{
+	 width:400px;
+	 height:500px;
+	 border: 3px outset silver;
+	 position:absolute;
+	 top:220px;
+	 left:525px;
+ }
+ #botao-cadastrar4{
+ 	  position:absolute;
+      border: 3px outset #1E90FF;
+	  margin-left:10px;
+	  left:225px;
+	 
+  }
+  #botao-cadastrar5{
+	  height:30px;
+ 	  position:absolute;
+      border: 3px outset #1E90FF;
+	  margin-left:10px;
+	  left:125px;
+	  top:128px;
+  }
+   #botao-cadastrar6{
+	  height:30px;
+ 	  position:absolute;
+      border: 3px outset #1E90FF;
+	  margin-left:10px;
+	  left:227px;
+	  top:178px;
+  }
+   #botao-cadastrar7{
+	  height:30px;
+ 	  position:absolute;
+      border: 3px outset #1E90FF;
+	  margin-left:10px;
+	  left:237px;
+	  top:209px;
+  }
+  #formulario-cadastro-produto{
+	 width:400px;
+	 height:500px;
+	 border: 3px outset silver;
+	 position:absolute;
+	 top:220px;
+	 left:525px;
+ }
+  #form-editar-produto{
+	 width:400px;
+	 height:500px;
+	 border: 3px outset silver;
+	 position:absolute;
+	 top:220px;
+	 left:525px;
