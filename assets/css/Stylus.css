@@ -18,3 +18,33 @@
 		margin-top:1	0px; 
 	}
 /************************************************/
+
+#login{	
+	
+	margin-right:0;
+	margin-bottom: 0px;
+	margin-top:60px;
+	
+}
+
+#logo img{	
+
+   width: 200px;
+   /* height: 197px;*/
+   height: 100px;
+
+}
+
+#texto{
+	text-align: center;
+	
+}
+
+ul li{
+	display: inline;
+	
+}
+ul li a{
+	
+	text-decoration: none;
+}

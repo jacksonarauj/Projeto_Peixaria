@@ -6,26 +6,33 @@
 
 <body>
 <header>
-   <div class="center">					  
-      <nav>  
-	  
-	    <ul>
-		     <div class="image">
-		           <img src="http://localhost/ProvaWebJackson/assets/Imagens/logo2.jpeg" > 
-			    <div class="texto">
-					<h1 style="text-align: center">PEIXARIA LAMBARI</h3>			
-			  	</div>
-			 </div>
+   <div class="container">
+   <!-- Inicio row-->	
+	   <div class="row">	     	
+		      	<div class="col-md-4" id="logo">
+					<img src="<?=base_url()?>/assets/Imagens/logo2.jpeg" > 
+				</div>  
+				<div id="" class="col-md-5">
+					<h1>PEIXARIA LAMBARI</h1>			
+				</div>
+				                  
+	   		<div class="col-md-3" id="login">				
+				<a href="<?= base_url()?>index.php/inicial/registrar"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Registrar</button></a>
+				<a href="<?= base_url()?>index.php/usuario/login"><button id="botao-cadastrar2" class="btn btn-dark btn-sm">Login<i class="fas fa-sign-in-alt"></i></button></a>
+			</div>
+		</div>
+	<!-- Fim row cabecalho-->
 
-		
-        </ul>
-	  </nav>	                  
-   </div>
-					 <div class="icone-entrar2" style="width:80px;height:800px;position:absolute; top:130px;left:1270px;">
-						 <image src="http://localhost/ProvaWEB/assets/Imagens//iconeentrar.png">
-						  <a href="<?= base_url()?>inicial/registrar"><button id="botao-cadastrar1"><font>Cadastrar-se</font></button></a>
-						<a href="<?= base_url()?>usuario/login"><button id="botao-cadastrar2"><font>Entrar</font></button></a>
-					  </div>
+	<div class="row">
+		<nav>
+			<ul>
+				<li> <a  href="<?= base_url()?>index.php/inicial">Home</a></li>
+				<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a></li>
+			</ul>
+		</nav>
+
+	</div>
+	</div>
 </header>
 
 

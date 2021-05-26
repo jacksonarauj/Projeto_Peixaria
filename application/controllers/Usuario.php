@@ -6,8 +6,10 @@ class Usuario extends CI_Controller {
 
 	public function login()
 	{
-		$this->load->view('listaPeixes');
-		
+		//$this->load->view('listaPeixes');
+		$this->load->view('html_header');
+		$this->load->view("cabeçalho");
+		$this->load->view("login");
 
 	}
 	
@@ -19,10 +21,19 @@ class Usuario extends CI_Controller {
 		$result = $this->Cadastro_model->validar($_POST["email"],md5($_POST["senha"]));
 
 		if (empty($result)) {
+			$this->load->view('html_header');
+			$this->load->view("cabeçalho");
 			$this->load->view("menu");
 			$this->load->view("login");
 		}else{
+			foreach ($result as $row) {
+				//$dados['usuario'] = $row->email;
+				$dados['usuario'] = $row['nome'];
+			}			
+
+			$this->load->view('html_header');
 			$this->load->view("cabeçalho");
+			$this->load->view("logado",$dados);
 			
 		}
 
