@@ -78,10 +78,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<input type='button' name='voltar' value='voltar'>
 							</a>";
 					}
-<<<<<<< HEAD
 
-=======
->>>>>>> 8444374f83cf5a6cabea9b23b43109e51e4c235c
+
+
+ 
 			?>
 			<a href="<?=base_url()?>usuario/listar">
 				<input type="button" name="editar" value="Listar Usuários">

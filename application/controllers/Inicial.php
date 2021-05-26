@@ -48,7 +48,9 @@ class Inicial extends CI_Controller {
 	
 	public function registrar()
 	{
-		$this->load->view('menu');
+		$this->load->view('html_header');
+		$this->load->view('cabeçalho');
+		//$this->load->view('menu');
 		$this->load->view('registrar');
 	}	
 	
