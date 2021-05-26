@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //aqui estavav errado / estava escrito PROVAWEB/!!!!
-$config['base_url'] = 'http://localhost/Portfolio1/ProvaWebJackson/';
+$config['base_url'] = 'http://localhost/Portfolio1/Projeto_Peixaria/';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ $config['base_url'] = 'http://localhost/Portfolio1/ProvaWebJackson/';
 |
 */
 //retirei o /index.php/ para a url ficar mais amigavel
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------

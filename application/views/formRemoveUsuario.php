@@ -14,7 +14,7 @@
 	</h1>
 
 	<div id="container">
-		<form action='inicial/receber' method='post'>
+		<form action='<?php echo base_url()?>index.php/inicial/receber' method='post'>
 			<input type="text" name="nome" placeholder="nome"      value="<?= isset($nome) ? $nome : "" ?>" required>
 			</br>
 			
