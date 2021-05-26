@@ -121,6 +121,16 @@ class Usuario extends CI_Controller {
 
 		
 	}
+
+	public function teste($arquivo){
+		
+		$file = array(
+			'pagina' => $arquivo,
+		);
+		
+		$this->load->view('TESTE',$file);
+		
+	}
 	
 	
 	
