@@ -105,7 +105,7 @@ class Usuario extends CI_Controller {
 			}
 
 			$dados = array( 'id' => $id,'email' => $_POST['email'], 'senha' => md5($_POST['senha']), 'nome' => $_POST['nome'],'Status'=>$_POST['status']);
-			$this->Cadastro_model->editUsuario($id);
+			$this->Cadastro_model->removeUsuario($id);
 			$this->load->view("menu");
 			$this->load->view("formRemoveUsuario", $dados);
 		}else{
@@ -114,9 +114,9 @@ class Usuario extends CI_Controller {
 			$nome = $result[0]['nome'];
 			$email = $result[0]['email'];
 			$senha = $result[0]['senha'];
-			$status = $result[0]['Status'];
+			//$status = $result[0]['Status'];
 
-			$dados = array( 'id' => $id,'email' => $email, 'senha' => md5($senha), 'nome' => $nome, 'erro' => false,'Status'=>$status  );
+			$dados = array( 'id' => $id,'email' => $email, 'senha' => md5($senha), 'nome' => $nome, 'erro' => false);
 			$this->load->view("menu", array('voltar'=>true));
 			$this->load->view("formRemoveUsuario", $dados);
 		}

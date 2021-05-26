@@ -48,7 +48,7 @@ class Cadastro_model extends CI_Model {
 	}
 
 	function getUser($id){
-		return $this->db->query("SELECT * FROM `usuarios` WHERE id_Usuario = ".$id)->result_array();
+		return $this->db->query("SELECT * FROM `usuarios` WHERE id = ".$id)->result_array();
 	}
 
 	function editUsuario($id){
@@ -58,7 +58,7 @@ class Cadastro_model extends CI_Model {
 			'Status'=>$_POST['status']);
 			
 			$this->db->set($array);
-			$this->db->where('id_Usuario', $id);
+			$this->db->where('id', $id);
 			$this->db->update('usuarios');		
 	}
 	
@@ -68,8 +68,8 @@ class Cadastro_model extends CI_Model {
 			'senha' => md5($_POST['senha']) );
 			
 			$this->db->set($array);
-			$this->db->where('id_Usuario', $id);
-			$this->db->update('usuarios');		
+			$this->db->where('id', $id);
+			$this->db->delete('usuarios');		
 	}
 
 }
