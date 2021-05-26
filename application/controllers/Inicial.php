@@ -27,7 +27,7 @@ class Inicial extends CI_Controller {
 		//$senha=$this->input->post('senha');
 		$this->load->view('html_header');
 		$this->load->view('cabeçalho');
-		$this->load->view('login');
+		//$this->load->view('login');
 
 		$nome = $_POST["nome"];
 		$email = $_POST["email"];

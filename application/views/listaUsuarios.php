@@ -8,7 +8,7 @@
 
 		<tr>
 			<td>
-			#<?= $usuario['id_Usuario'] ?>
+			#<?= $usuario['id'] ?>
 			</td>
 			<td>
 				<?= $usuario['nome'] ?>
@@ -17,13 +17,13 @@
 				<?= $usuario['email'] ?>
 			</td>
 			<td>
-				<a href="<?=base_url()?>usuario/editar/<?= $usuario['id_Usuario'] ?>">
+				<a href="<?=base_url()?>usuario/editar/<?= $usuario['id'] ?>">
 					<input type="button" name="editar" value="Editar">
 				</a>
 			</td>
 			
 			<td>
-				<a href="<?=base_url()?>usuario/removeUsuario/<?= $usuario['id_Usuario'] ?>">
+				<a href="<?=base_url()?>usuario/removeUsuario/<?= $usuario['id'] ?>">
 					<input type="button" name="editar" value="Excluir">
 				</a>
 			</td>

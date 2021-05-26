@@ -43,12 +43,14 @@ class Usuario extends CI_Controller {
 
 	public function listar(){
 
-		//$this->load->model("Cadastro_model");
+		$this->load->model("Cadastro_model");
 
-		//$result = $this->Cadastro_model->getUsuarios();
+		$result = $this->Cadastro_model->getUsuarios();
 
-		//$dados = array( 'usuarios' => $result );
+		$dados = array( 'usuarios' => $result );
+		$this->load->view('html_header');
 		$this->load->view('cabeçalho');
+		$this->load->view('listaUsuarios',$dados);
 	}
 
 	public function editar($id){

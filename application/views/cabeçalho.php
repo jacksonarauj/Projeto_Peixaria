@@ -30,6 +30,7 @@
 				<li> <a  href="<?= base_url()?>index.php/inicial">Home</a></li>
 				<!--<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a></li>-->
 				<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a></li>
+				<li> <a  href="<?= base_url()?>index.php/usuario/listar">Listar</a></li>
 			</ul>
 			<li> <a  href="<?= base_url()?>index.php/usuario/teste/login">Logar</a></li>
 			<li> <a  href="<?= base_url()?>index.php/usuario/teste/registrar">Registrar</a></li>
