@@ -63,11 +63,11 @@ class Cadastro_model extends CI_Model {
 	}
 	
 	function removeUsuario($id){
-		$array = array('nome' => $_POST['nome'],
+		/*$array = array('nome' => $_POST['nome'],
 			'email' => $_POST['email'],
-			'senha' => md5($_POST['senha']) );
+			'senha' => md5($_POST['senha']) );*/
 			
-			$this->db->set($array);
+			//$this->db->set($array);
 			$this->db->where('id', $id);
 			$this->db->delete('usuarios');		
 	}
