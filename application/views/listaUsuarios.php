@@ -6,7 +6,8 @@
 			<th>Email</th>
 			<th>Editar</th>
 			<th>Excluir</th>
-		<?php foreach ($usuarios as $usuario) {		?>
+		<?php 
+		foreach ($usuarios as $usuario) {		?>
 
 			<tr>
 				<td>
@@ -19,7 +20,7 @@
 					<?= $usuario['email'] ?>
 				</td>
 				<td>
-					<a href="<?=base_url()?>usuario/editar/<?= $usuario['id'] ?>">
+					<a href="<?=base_url()?>index.php/usuario/editar/<?= $usuario['id'] ?>">
 						<input class="btn btn-primary btn-sm" type="button" name="editar" value="Editar">
 					</a>
 				</td>

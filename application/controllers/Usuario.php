@@ -57,20 +57,25 @@ class Usuario extends CI_Controller {
 		//echo $id;
 		$this->load->model("Cadastro_model");
 		
-		if (!empty($_POST)) {
+		if (!empty($id)) {
 
 			$this->load->model("Valida_model");
+			$result = $this->Cadastro_model->getUser($id);
+       
+         foreach ($result as $row) {
 
-			$existe = $this->Valida_model->verificarEmail($_POST["email"]);
+         	$dados = array(
+         		'id'=>  $row['id'],
+         		'email' => $row['email'],
+         		'senha' => md5($row['senha']),
+				'nome' => $row['nome'],
 
-			if (empty($existe)) {
-				$this->Cadastro_model->editUsuario($id);
-				header('location:'.base_url()."usuario/listar");
-			}
+         	);
+         	var_export($dados);
+         }
+			//$dados = array( 'id' => $id,'email' => $result["email"], 'senha' => md5($result['senha']), 'nome' => $result['nome'], 'erro' => true );
 
-			$dados = array( 'id' => $id,'email' => $_POST['email'], 'senha' => md5($_POST['senha']), 'nome' => $_POST['nome'], 'erro' => true );
-
-			$this->load->view("menu");
+			
 			$this->load->view("bem_vindo", $dados);
 		}else{
 			$result = $this->Cadastro_model->getUser($id);
@@ -78,11 +83,15 @@ class Usuario extends CI_Controller {
 			$nome = $result[0]['nome'];
 			$email = $result[0]['email'];
 			$senha = $result[0]['senha'];
-			$status = $result[0]['Status'];
+			
 
 			$dados = array( 'id' => $id,'email' => $email, 'senha' => md5($senha), 'nome' => $nome, 'erro' => false );
-			$this->load->view("menu", array('voltar'=>true));
-			$this->load->view("bem_vindo", $dados);
+			//$this->load->view("menu", array('voltar'=>true));
+			//$this->load->view("bem_vindo", $dados);
+			$this->load->view('html_header');
+			$this->load->view('cabeçalho');
+			echo"deuboa";		    
+
 		}
 
 		
