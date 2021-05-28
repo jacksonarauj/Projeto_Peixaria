@@ -54,16 +54,17 @@ class Usuario extends CI_Controller {
 	}
 	public function alterarDados(){
 		var_dump($_POST);
-		/*$dados = array('nome' => $_POST['nome'],
+		$dados = array('nome' => $_POST['nome'],
 			'email' => $_POST['email'],
 			'senha' => md5($_POST['senha']),
-			'Status'=>$_POST['status'],
+			
 			'id' => $_POST['id']);
 		
-		$this->load->model("CadastroModel");
-		$return=$this->CadastroModel->editUsuario($dados);
-		$this->load->views('resultado');
-        echo $return;*/
+		$this->load->model("Cadastro_Model");
+		$this->Cadastro_Model->editUsuario($dados);
+		//$this->load->views('resultado');
+        //echo $return;
+        header('location:'.base_url()."index.php/usuario/listar");
 
 	}
 
