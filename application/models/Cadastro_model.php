@@ -51,14 +51,11 @@ class Cadastro_model extends CI_Model {
 		return $this->db->query("SELECT * FROM `usuarios` WHERE id = ".$id)->result_array();
 	}
 
-	function editUsuario($id){
-		$array = array('nome' => $_POST['nome'],
-			'email' => $_POST['email'],
-			'senha' => md5($_POST['senha']),
-			'Status'=>$_POST['status']);
-			
-			$this->db->set($array);
-			$this->db->where('id', $id);
+	function editUsuario($dados){
+
+		 echo"ta foda ";
+			$this->db->set($dados);
+			$this->db->where('id', $dados['id']);
 			$this->db->update('usuarios');		
 	}
 	

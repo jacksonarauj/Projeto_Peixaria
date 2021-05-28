@@ -52,9 +52,24 @@ class Usuario extends CI_Controller {
 		$this->load->view('cabeçalho');
 		$this->load->view('listaUsuarios',$dados);
 	}
+	public function alterarDados(){
+		var_dump($_POST);
+		/*$dados = array('nome' => $_POST['nome'],
+			'email' => $_POST['email'],
+			'senha' => md5($_POST['senha']),
+			'Status'=>$_POST['status'],
+			'id' => $_POST['id']);
+		
+		$this->load->model("CadastroModel");
+		$return=$this->CadastroModel->editUsuario($dados);
+		$this->load->views('resultado');
+        echo $return;*/
+
+	}
 
 	public function editar($id){
 		//echo $id;
+		//Carrega model cadastro para manipulação de cadastro
 		$this->load->model("Cadastro_model");
 		
 		if (!empty($id)) {
@@ -71,14 +86,14 @@ class Usuario extends CI_Controller {
 				'nome' => $row['nome'],
 
          	);
-         	var_export($dados);
+         	
          }
 			//$dados = array( 'id' => $id,'email' => $result["email"], 'senha' => md5($result['senha']), 'nome' => $result['nome'], 'erro' => true );
 
 			
-			$this->load->view("bem_vindo", $dados);
+			$this->load->view("updateUsuario", $dados);
 		}else{
-			$result = $this->Cadastro_model->getUser($id);
+			/*$result = $this->Cadastro_model->getUser($id);
 
 			$nome = $result[0]['nome'];
 			$email = $result[0]['email'];
@@ -90,7 +105,7 @@ class Usuario extends CI_Controller {
 			//$this->load->view("bem_vindo", $dados);
 			$this->load->view('html_header');
 			$this->load->view('cabeçalho');
-			echo"deuboa";		    
+			echo"deuboa";	*/	    
 
 		}
 
