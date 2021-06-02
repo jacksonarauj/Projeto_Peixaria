@@ -1,0 +1,16 @@
+CRUD - ok
+
+Session - sessão de login
+
+
+------//--------//------------//-------
+Estilizar a página de registrar e login
+
+Página - Login/Logout
+	Menu
+	Form
+
+
+
+Usuario Logado
+
