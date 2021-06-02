@@ -20,7 +20,7 @@
 
 -->
 
-<center>
+
 	<h1>
 		<?php 
 			if (isset($email)!==TRUE) {
@@ -49,7 +49,7 @@
 			</br><input type="submit" name="btn_enviar" value="<?= isset($nome) ? "ok" : "salvar" ?>">
 		</form>
 	</div>
-</center>
+s
 
 
 

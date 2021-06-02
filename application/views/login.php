@@ -1,9 +1,5 @@
 
- <div class="center">					  
-     	                  
-   </div>
-					 		
-			<div class="coluna-b">
+ 
 			<div id="formulario-login">
 				<center>
 					<form action='<?=base_url()?>index.php/usuario/validarlogin' method='post'>
@@ -13,9 +9,8 @@
 
 						<br><br>
 						<input type="submit" name="btn_enviar" value="Enviar"style="border: 3px outset #1E90FF;position:relative;left:63px;">
-					</form>					
-				</center>				
+					</form>								
 			</div>
 			
-</div>
+
 

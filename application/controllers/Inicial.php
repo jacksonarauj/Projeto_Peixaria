@@ -13,12 +13,12 @@ class Inicial extends CI_Controller {
    		//$this->load->view('registrar');
    		//$this->load->view('formProduto');
    		//$this->load->view('editarproduto');
-   		$this->load->view('formRemoveUsuario');
+   			// $this->load->view('formRemoveUsuario');
    		//$this->load->view('login');
    		//$this->load->view('listaPeixes');
 
 		$this->load->view('footer');
-		$this->load->view('html_footer');	
+			
 	}
 
 	public function receber(){

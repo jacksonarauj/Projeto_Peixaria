@@ -15,8 +15,8 @@
              
      <?php
            //css
-    		//echo link_tag('assets/css/Stylus.css');
-    		//echo link_tag('assets/css/Cores.css');
+    		echo link_tag('assets/css/Stylus.css');
+    		echo link_tag('assets/css/Cores.css');
     		//js
     		//echo link_tag('assets/js/scripts.js');
     ?>
