@@ -47,6 +47,33 @@ class Usuario extends CI_Controller {
 
 	}
 	
+	public function validarRegistro() {
+		
+		$this->load->model("Cadastro_model");
+		$result = $this->Cadastro_model->validarEmail($_POST["email"]);
+		
+		if (!empty($result)){
+			
+			$this->load->view('html_header');
+			$this->load->view('cabeçalho');
+			$mensagem = array(
+				'alerta'=> "Email já cadastrado"
+			);
+			$this->load->view('registrar',$mensagem);	
+		}else{
+		$this->load->view('html_header');
+		$this->load->view('cabeçalho');
+		$this->load->view('login');	
+
+		$nome = $_POST["nome"];
+		$email = $_POST["email"];
+		$senha = $_POST["senha"];
+		$this->load->model("Cadastro_model");
+		$this->Cadastro_model->salvar($_POST);
+		}
+	
+	}
+	
 	
 
 	public function listar(){

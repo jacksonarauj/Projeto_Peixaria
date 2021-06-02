@@ -36,9 +36,16 @@
 	
 
 	</h1>
-
+<!-- <?php echo base_url()?>index.php/inicial/receber'-->
 <center>
-<form action='<?php echo base_url()?>index.php/inicial/receber' method='post' style="max-width:300px;">
+<form action='<?php echo base_url()?>index.php/usuario/validarRegistro' method='post' style="max-width:300px;">
+			<h5 style="color:red;">
+				<?php
+					if(!empty($alerta)){
+						echo $alerta;
+					}
+				?>
+			</h5>
 	<div class="form-group">
 		<label for="nome_registro"><strong>Nome</strong></label>
 		<input id="nome_registro" class="form-control" type="text" name="nome" placeholder="Nome" value="<?= isset($nome) ? $nome : "" ?>" required>

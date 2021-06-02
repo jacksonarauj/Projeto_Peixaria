@@ -39,6 +39,10 @@ class Cadastro_model extends CI_Model {
 	function validar($email, $senha){
 		return $this->db->query("SELECT * FROM `usuarios` WHERE email = '{$email}'  AND senha = '{$senha}' LIMIT 1")->result_array();
 	}
+	function validarEmail($email){
+		return $this->db->query("SELECT * FROM `usuarios` WHERE email = '{$email}' LIMIT 1")->result_array();
+	}
+	
 
 	function getUsuarios(){
 		return $this->db->query("SELECT * FROM `usuarios` WHERE nivelAcesso='Usuario'")->result_array();
