@@ -13,9 +13,11 @@
 				?>
 				<a href="<?= base_url()?>index.php/inicial/registrar"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Registrar</button></a>
 				<a href="<?= base_url()?>index.php/usuario/login"><button id="botao-cadastrar2" class="btn btn-dark btn-sm">Login <i class="fas fa-sign-in-alt"></i></button></a>
-		<?php
+				<?php
 					}else{
-						?><a href="<?= base_url()?>index.php/usuario/logout"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Sair</button></a>
+						?>
+						<h6>Bem vindo <br><?=$_SESSION['usuario'];?></h6>
+						<a href="<?= base_url()?>index.php/usuario/logout"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Sair</button></a>
 						<?php
 					}
 				?>
