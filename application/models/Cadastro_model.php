@@ -52,12 +52,12 @@ class Cadastro_model extends CI_Model {
 	}
 
 	function editUsuario($dados){
-<<<<<<< HEAD
 
-=======
+
+
 		var_dump($dados);
-		 echo"ta foda ";
->>>>>>> 25bcd98251db76152292ac4c8c046a044140985b
+		 
+
 			$this->db->set($dados);
 			$this->db->where('id', $dados['id']);
 			$this->db->update("usuarios");	

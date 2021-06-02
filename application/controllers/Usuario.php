@@ -10,6 +10,7 @@ class Usuario extends CI_Controller {
 		$this->load->view('html_header');
 		$this->load->view("cabeçalho");
 		$this->load->view("login");
+		$this->load->view("footer");
 
 	}
 	
@@ -54,7 +55,6 @@ class Usuario extends CI_Controller {
 	}
 
 	public function alterarDados(){
-<<<<<<< HEAD
 	
 		$dados = array('nome' => $_POST['nome'],
 			'email' => $_POST['email'],
@@ -65,7 +65,7 @@ class Usuario extends CI_Controller {
 		$return=$this->Cadastro_model->editUsuario($dados);
 
         $this->listar();
-=======
+
 		var_dump($_POST);
 		$dados = array('nome' => $_POST['nome'],
 			'email' => $_POST['email'],
@@ -78,7 +78,7 @@ class Usuario extends CI_Controller {
 		//$this->load->views('resultado');
         //echo $return;
         header('location:'.base_url()."index.php/usuario/listar");
->>>>>>> 25bcd98251db76152292ac4c8c046a044140985b
+
 
 	}
 

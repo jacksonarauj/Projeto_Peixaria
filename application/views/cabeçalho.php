@@ -1,7 +1,3 @@
-
-
-
-
 <header>
  
     
@@ -21,12 +17,9 @@
 				<!--<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a></li>-->
 				<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a>
 				</li>
-				<li> <a  href="<?= base_url()?>index.php/usuario/listar">Listar</a>
-				</li>
+				<li> <a  href="<?= base_url()?>index.php/usuario/listar">Listar</a></li>
 			
-				<li> <a  href="<?= base_url()?>index.php/usuario/teste/login">Logar</a>
-				</li>
-				<li> <a  href="<?= base_url()?>index.php/usuario/teste/registrar">Registrar</a></li>
+				
 					<form class="form-buscar">
         	<input class="buscar" type="search" placeholder="" aria-label="Search">
        	    <button class="botao-buscar" type="submit">Buscar</button>
@@ -35,11 +28,12 @@
                 
 			</ul>
 
-</div>
-	
+</div>	
 
 	
 </div>
 </header>
+<body>
+<div class="container">
 
 

@@ -1,3 +1,7 @@
+</div>
+
 <footer>
 		<h3>Rodape</h3>
 </footer>
+
+</body>
