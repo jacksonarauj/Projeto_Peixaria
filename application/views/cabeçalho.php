@@ -7,16 +7,25 @@
 	   						
 				<!--<a href="<?= base_url()?>index.php/inicial/registrar"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Registrar</button></a>
 				<a href="<?=base_url()?>index.php/usuario/removeUsuario"><button id="botao-cadastrar2" class="btn btn-dark btn-sm">excluirUsuario<i class="fas fa-sign-in-alt"></i></button></a>-->
-
+				<?php
+					
+					if(empty($_SESSION['usuario'])){
+				?>
 				<a href="<?= base_url()?>index.php/inicial/registrar"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Registrar</button></a>
 				<a href="<?= base_url()?>index.php/usuario/login"><button id="botao-cadastrar2" class="btn btn-dark btn-sm">Login <i class="fas fa-sign-in-alt"></i></button></a>
-		
+		<?php
+					}else{
+						?><a href="<?= base_url()?>index.php/usuario/logout"><button id="botao-cadastrar1" type="button" class="btn btn-dark btn-sm">Sair</button></a>
+						<?php
+					}
+				?>
 				<li> <a  href="<?= base_url()?>index.php/inicial">Home</a></li>
 				<!--<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a></li>-->
+				
 				<li> <a  href="<?= base_url()?>index.php/usuario/login">Login</a>
 				</li>
 				<li> <a  href="<?= base_url()?>index.php/usuario/listar">Listar</a></li>
-			
+				
 				
 					<form class="form-buscar">
         	<input class="buscar" type="search" placeholder="" aria-label="Search">

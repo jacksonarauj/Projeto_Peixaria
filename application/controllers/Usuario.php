@@ -16,6 +16,7 @@ class Usuario extends CI_Controller {
 	
 	public function validarlogin()
 	{
+		
 		//var_dump($_POST);
 		$this->load->model("Cadastro_model");
 
@@ -31,12 +32,16 @@ class Usuario extends CI_Controller {
 		}else{
 			foreach ($result as $row) {
 				//$dados['usuario'] = $row->email;
-				$dados['usuario'] = $row['nome'];
+				//$dados['usuario'] = $row['nome'];
+				$_SESSION['usuario'] = $row['nome'];
+				$_SESSION['email'] = $row['email'];
+				$_SESSION['nivelAcesso'] = $row['nivelAcesso'];
 			}			
 
 			$this->load->view('html_header');
 			$this->load->view("cabeçalho");
-			$this->load->view("logado",$dados);
+			//$_SESSION['nome'] = $dados['usuario'];
+			$this->load->view("logado");
 			
 		}
 
@@ -174,6 +179,15 @@ class Usuario extends CI_Controller {
 		);
 		
 		$this->load->view('TESTE',$file);
+		
+	}
+	
+		public function logout(){
+				$_SESSION['usuario'] = "";
+				$_SESSION['email'] = "";
+				$_SESSION['nivelAcesso'] = "";
+		
+			header('location:'.base_url()."index.php/inicial/");
 		
 	}
 	
