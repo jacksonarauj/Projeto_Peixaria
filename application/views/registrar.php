@@ -41,7 +41,7 @@
 <form action='<?php echo base_url()?>index.php/inicial/receber' method='post' style="max-width:300px;">
 	<div class="form-group">
 		<label for="nome_registro"><strong>Nome</strong></label>
-		<input id="nome_registro" class="form-control" type="text" name="nome" placeholder="Nome"      value="<?= isset($nome) ? $nome : "" ?>" required>
+		<input id="nome_registro" class="form-control" type="text" name="nome" placeholder="Nome" value="<?= isset($nome) ? $nome : "" ?>" required>
 	</div>
 			
 	<div class="form-group">
@@ -57,9 +57,9 @@
 			
 	<input type="submit" class="btn btn-primary" name="btn_enviar" value="<?= isset($nome) ? "ok" : "Cadastrar" ?>">
 </form>
-	
-
 </center>
+
+
 
 
 
