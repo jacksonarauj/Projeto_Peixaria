@@ -1,6 +1,13 @@
 <div id="formulario-login">	
 	<center>
 		<form action='<?=base_url()?>index.php/usuario/validarlogin' method='post' style="max-width:300px;">
+			<h5 style="color:red;">
+				<?php
+					if(!empty($alerta)){
+						echo $alerta;
+					}
+				?>
+			</h5>
 			<div class="form-group">
 				<label for="form_email"><strong>Endereço de email</strong></label>
 				<input id="form_email" type="text" name="email" placeholder="email"style="border: 2px outset #1E90FF;" class="form-control">

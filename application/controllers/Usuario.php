@@ -23,9 +23,11 @@ class Usuario extends CI_Controller {
 
 		if (empty($result)) {
 			$this->load->view('html_header');
-			$this->load->view("cabeçalho");
-			$this->load->view("menu");
-			$this->load->view("login");
+			$this->load->view("cabeçalho");	
+			$aviso = array(
+				'alerta' => "Usuário e/ou senha incorretos"
+			);
+			$this->load->view("login",$aviso);
 		}else{
 			foreach ($result as $row) {
 				//$dados['usuario'] = $row->email;
