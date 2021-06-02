@@ -20,14 +20,17 @@
 					<?= $usuario['email'] ?>
 				</td>
 				<td>
-					<a href="<?=base_url()?>index.php/usuario/editar/<?= $usuario['id'] ?>">
+					<!--<a href="<?=base_url()?>index.php/usuario/editar/<?= $usuario['id'] ?>">
 						<input class="btn btn-primary btn-sm" type="button" name="editar" value="Editar">
+					</a>-->
+					<a href="<?=base_url()?>index.php/usuario/editar/<?= $usuario['id'] ?>" style="color:blue;"><i class="fas fa-edit"> Editar</i>
+						
 					</a>
 				</td>
 				
 				<td>
-					<a href="<?=base_url()?>index.php/usuario/removeUsuario/<?= $usuario['id'] ?>">
-						<input class="btn btn-danger btn-sm" type="button" name="excluir" value="Excluir">
+					<a href="<?=base_url()?>index.php/usuario/removeUsuario/<?= $usuario['id'] ?>" style="color:red;"><i class="far fa-trash-alt"> Excluir</i>
+						<!--<input class="btn btn-danger btn-sm" type="button" name="excluir" value="Excluir">-->
 					</a>
 				</td>
 			</tr>

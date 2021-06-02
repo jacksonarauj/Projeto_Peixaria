@@ -25,7 +25,9 @@
 		<?php 
 			if (isset($email)!==TRUE) {
 				$email = "";
-				echo "CADASTRAR";
+				?><center><?php
+				echo "Formulário de Cadastro";?>
+				</center><?php
 			}else{
 				echo "EDITAR";
 			}
@@ -35,22 +37,29 @@
 
 	</h1>
 
-	<div id="container">
-		<form action='inicial/receber' method='post'>
-			<input type="text" name="nome" placeholder="nome"      value="<?= isset($nome) ? $nome : "" ?>" required>
-			</br>
-			
-			<input type="text" name="email" placeholder="email" value="<?= $email?>">
-			
-			</br><input type="password" name="senha" placeholder="senha" value="<?= isset($senha) ? $senha : "" ?>">
-			
-			</br><input type="int" name="status" placeholder="Status"      value="<?= isset($Status) ? $Status : "" ?>" required>
-
-			</br><input type="submit" name="btn_enviar" value="<?= isset($nome) ? "ok" : "salvar" ?>">
-		</form>
+<center>
+<form action='<?php echo base_url()?>index.php/inicial/receber' method='post' style="max-width:300px;">
+	<div class="form-group">
+		<label for="nome_registro"><strong>Nome</strong></label>
+		<input id="nome_registro" class="form-control" type="text" name="nome" placeholder="Nome"      value="<?= isset($nome) ? $nome : "" ?>" required>
 	</div>
-s
+			
+	<div class="form-group">
+		<label for="email_registro"><strong>Email</strong></label>
+		<input id="email_registro" class="form-control" type="text" name="email" placeholder="Email" value="<?= $email?>">
+	</div>
+			
+	<div class="form-group">
+		<label for="senha_registro"><strong>Senha</strong></label>
+		<input id="senha_registro" class="form-control" type="password" name="senha" placeholder="Senha" value="<?= isset($senha) ? $senha : "" ?>">
+	</div>
+	<br>	
+			
+	<input type="submit" class="btn btn-primary" name="btn_enviar" value="<?= isset($nome) ? "ok" : "Cadastrar" ?>">
+</form>
+	
 
+</center>
 
 
 

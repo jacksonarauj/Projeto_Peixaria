@@ -52,7 +52,8 @@ class Inicial extends CI_Controller {
 		$this->load->view('cabeçalho');
 		//$this->load->view('menu');
 		//$this->load->view('registrar');
-		$this->load->view('formRemoveUsuario');
+		$this->load->view('registrar');
+		$this->load->view('footer');
 	}	
 	
 	public function cadastrarProduto(){

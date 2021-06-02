@@ -1,6 +1,4 @@
-<header>
- 
-    
+<header>    
    		<div class="col-md-2" id="logo">
 			<img src="<?=base_url()?>/assets/Imagens/logo2.jpeg" > 
 		</div> 
