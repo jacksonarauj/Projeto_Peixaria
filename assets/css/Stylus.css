@@ -5,29 +5,36 @@
 
 }
 #menu{      
-      border: 3px solid:black;
- max-height:100px;
-
-	left:240px;
-	max-width:100%
-	 top:0px;
-	 background-color:red;
+     
+     max-height:120px;
+	 max-width:100%;
+	 
+	 background-color:b8cdff;
 }
 .menu ul{
 	 border: 3px solid:black;
+	  float: right;
 }
 .menu ul li{   
 	display:inline;
 		
-		 float: left;
+		 float: right;
+
 
 		}
+.navbar{
+	 max-width:100%;
+	  background-color:red;	
+	  	 float: center;	
+}
 .form-buscar{
 	top:50;
+	 float: right;
 	}
 .buscar{
 	max-width:100px;
 	max-height:50px;
+
 
 }
 .botao-buscar{
@@ -36,7 +43,21 @@
 
 }
 
+#logo{
+	max-width:200px;
+	max-height:100px;
+	left: 200px;
 
+}
+
+}
+#image-login{
+	max-width:90px;
+    max-height:100px;
+}
+#botao-login{
+	 border: 3px solid:green;
+	
 }
 
 /*formulario de cadastro de usuarios*/
