@@ -1,86 +1,63 @@
 /* Cabeçalho*/
-.cabeçalho{
-	 max-width:100%;
-	 max-height:100px;
+#cabecalho{
+	position: absolute;
+	max-height:120px;
+	width: 80%;
+	background-color: red;
 
 }
-#menu{      
-     
-     max-height:120px;
-	 max-width:100%;
-	 
-	 background-color:b8cdff;
-}
-.menu ul{
-	 border: 3px solid:black;
-	  float: right;
-}
-.menu ul li{   
-	display:inline;
-		
-		 float: right;
 
 
-		}
+
 .navbar{
-	 max-width:100%;
-	  background-color:red;	
-	  	 float: center;	
+	max-width:100%;
+	background-color:red;	
+	/*float: center;	*/
 }
-.form-buscar{
-	top:50;
-	 float: right;
-	}
+
 .buscar{
 	max-width:100px;
 	max-height:50px;
 
 
 }
-.botao-buscar{
-	max-width:100px;
-	max-height:50px;
 
-}
 
 #logo{
+	width: 200px;
 	max-width:200px;
-	max-height:100px;
-	left: 200px;
+	max-height:120px;
 
+}
+#logo_img{	
+	width: 195px;
+	/* height: 197px;*/
+	height: 118px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
 }
 
 }
 #image-login{
 	max-width:90px;
-    max-height:100px;
+	max-height:100px;
 }
+
+#menu_principal{
+	display: block;
+	padding-right: 5px;
+	position: relative;
+	margin-left: 0px;
+	right: 0px;
+
+}
+
 #botao-login{
-	 border: 3px solid:green;
-	
+
 }
 
-/*formulario de cadastro de usuarios*/
-	.coluna-a{
-		border-top: 3px solid #D0D0D0;
-        margin: 60px;
-	}
-	.form_cadasrto_usuario{
-		border-top: 3px solid #D0D0D0;          
-	}
-	.campo_a{
-		border-top: 3px solid #D0D0D0; 
-		margin: 10px;   
-		padding: 14px 15px 3px 15px;      
-	}
-	
-	.boton{
-		padding: 14px 13px 5px 15px; 
-		border: 3px solid silver; 
-		margin-top:1	0px; 
-	}
-
-/************************************************/
 
 #login{	
 	
@@ -90,13 +67,7 @@
 	
 }
 
-#logo img{	
 
-   width: 200px;
-   /* height: 197px;*/
-   height: 100px;
-
-}
 
 #texto{
 	text-align: center;
@@ -105,9 +76,21 @@
 
 ul li{
 	display: inline;
-	
+	list-style: none;
 }
 ul li a{
 	
 	text-decoration: none;
+
+}
+
+
+#area_usuario{
+	position: relative;
+	padding-right: 0px;
+	display: inline-block;
+	
+}
+ul{
+	list-style: none;
 }

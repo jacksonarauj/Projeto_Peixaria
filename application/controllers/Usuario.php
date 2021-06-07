@@ -217,6 +217,12 @@ class Usuario extends CI_Controller {
 			header('location:'.base_url()."index.php/inicial/");
 		
 	}
+
+	public function cabecalho_teste(){
+		$this->load->view('html_header');
+		$this->load->view("cabeçalho_teste");		
+		
+	}
 	
 	
 	

@@ -6,3 +6,11 @@
 	
 	background-color:red;
 }
+
+.link_home{
+	color: black;
+}
+
+#menu_principal{
+	display: inline;
+}
