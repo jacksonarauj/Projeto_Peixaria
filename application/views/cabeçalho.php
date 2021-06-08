@@ -34,6 +34,11 @@
 				</a>
 			</li>
 			<li class="nav-item"> 
+				<a lass="nav-link"href="<?= base_url()?>index.php/produto/cadastroProduto">
+					<button id="botao-cadastrar" type="button" class="btn btn-dark btn-sm">Cadastrar Produto</button>
+				</a>
+			</li>
+			<li class="nav-item"> 
 				<a  href="<?= base_url()?>index.php/usuario/listar">Listar</a>
 			</li>
 				
