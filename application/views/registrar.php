@@ -1,4 +1,4 @@
-<!--
+ <!--
 	<div class="coluna-a">		 
 		<center>
 			<?php //echo form_open('inicial/receber','id="sign"')?>
