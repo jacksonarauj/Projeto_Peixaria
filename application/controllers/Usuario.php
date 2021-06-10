@@ -5,8 +5,8 @@ class Usuario extends CI_Controller {
 	
 
 	public function login()
-	{
-		//$this->load->view('listaPeixes');
+	{    
+		//$this->load->view('listaPeixes'); 
 		$this->load->view('html_header');
 		$this->load->view("cabeçalho");
 		$this->load->view("login");

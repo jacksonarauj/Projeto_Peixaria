@@ -28,10 +28,7 @@ class Cadastro_model extends CI_Model {
 	function getUsuarios(){
 		return $this->db->query("SELECT * FROM `usuarios` WHERE nivelAcesso='Usuario'")->result_array();
 	}
-	function getPeixes(){
-		return $this->db->query("SELECT * FROM `peixes`")->result_array();
-	}
-
+	
 	function getUser($id){
 		return $this->db->query("SELECT * FROM `usuarios` WHERE id = ".$id)->result_array();
 	}

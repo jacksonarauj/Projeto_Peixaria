@@ -1,39 +1,5 @@
 
-							<!--JACKSON-->
-            <div class="menulateral">
-		      <h6>-Especie</h6>
-		       <form>
- 			    <div class="search">
-    			<label for=""  ></label>
-    			<div class="col-sm-4">
-      			<input placeholder="Especie">
-    			</div>
-    		    </div>
-			   </form>
-			    <br></br>
-		      <h6>-Valor</h6>
-		    	<br></br>
- 			   <form>
- 			    <div class="search2">
-    			<label for=""  ></label>
-    			<div class="col-sm-4">
-      			<input placeholder="Valor">
-    		    </div>
-                </div>
-			   </form></h6>
-			  <h6>-Água Doce ou Salgada</h6>
-			   <form>
- 			    <div class="search3">
-    			<label for=""  ></label>
-    			<div class="col-sm-4">
-      			<input placeholder="Água Doce ou Salgada">
-    			</div>
-    		    </div>
-			   </form>
-			    <br></br>
-            </div>
-        </div>
-<div class="coluna-a">
+<div class="container">
     <<center>
 	<table>
 		<th>ID</th>

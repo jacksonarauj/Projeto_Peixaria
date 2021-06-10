@@ -10,45 +10,30 @@ class Produto extends CI_Controller {
 		$this->load->view('cabeçalho');
 		$this->load->view('formProduto');
 		$this->load->view('footer');
-		
-
 	}
+
 	public function validarCadastroProduto(){
 		$this->load->model("Cadastro_Produto");
+		$result = $this->Cadastro_Produto->validarProduto($_POST["nome"],$_POST["precokg"]);
 
-		$result = $this->Cadastro_Produto->validar($_POST["habitat"],$_POST["nome"],$_POST["precokg"]);
-
-			//if (empty($result)) {
+		if ($result==false){
+			$this->load->view('html_header');
+			$this->load->view('cabeçalho');
+			$mensagem = array(
+				'alerta'=> "Esse produto ja esta cadastrado"
+			);
+			$this->load->view('formProduto',$mensagem);	
+		}else if($result==true){
 			$this->load->view('html_header');
 			$this->load->view("cabeçalho");
-
-
-			//$this->load->view("home");
-		//}else{
-		//foreach ($result as $row) {
-				//$dados['usuario'] = $row->email;
-				//$dados['usuario'] = $row['nome'];
-		//		$_SESSION['nome'] = $row['nome'];
-		//		$_SESSION['precokg'] = $row['precokg'];
-		//		$_SESSION['habitat'] = $row['habitat'];
-				
-			//}			
-
-			//$this->load->view('html_header');
-			//$this->load->view("cabeçalho");
-			//$_SESSION['nome'] = $dados['usuario'];
-			//$this->load->view("logado");
-			
-		//}
-
+			$this->load->model("Cadastro_Produto");
+			$this->Cadastro_Produto->salvarProduto($_POST);
+		}
 	}
 	
 	public function listar(){
-
-		$this->load->model("Cadastro_model");
-
-		$result = $this->Cadastro_model->getPeixes();
-
+		$this->load->model("Cadastro_Produto");
+		$result = $this->Cadastro_Produto->getPeixes();
 		$dados = array( 'peixes' => $result );
 		$this->load->view("listaPeixes", $dados);	
 	

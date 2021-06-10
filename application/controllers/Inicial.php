@@ -9,14 +9,8 @@ class Inicial extends CI_Controller {
 	public function index(){
 		$this->load->view('html_header');
 		$this->load->view('cabeçalho');
-
-   		//$this->load->view('registrar');
-   		//$this->load->view('formProduto');
-   		//$this->load->view('editarproduto');
-   			// $this->load->view('formRemoveUsuario');
-   		//$this->load->view('login');
-   		//$this->load->view('listaPeixes');
-
+        $this->load->Controller('Produto');
+        $this->Produto->listarProduto();
 		$this->load->view('footer');
 			
 	}
