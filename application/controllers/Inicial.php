@@ -7,10 +7,13 @@ class Inicial extends CI_Controller {
     }
 
 	public function index(){
+		$this->load->model('Cadastro_Produto');
+		  $produtos=$this->Cadastro_Produto->getPeixes();
+		  $dados = array( 'peixes' => $produtos);
 		$this->load->view('html_header');
 		$this->load->view('cabeçalho');
-        $this->load->Controller('Produto');
-        $this->Produto->listarProduto();
+        $this->load->view('home');
+        $this->load->view('listaPeixes',$dados);
 		$this->load->view('footer');
 			
 	}
