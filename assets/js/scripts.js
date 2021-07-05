@@ -1,3 +1,4 @@
-(Query(document).ready(function(s){
-	alert('oi');
-});
+
+console.log(
+      document.getElementById("teste")
+      );

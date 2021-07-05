@@ -12,8 +12,9 @@
               <!-- Bootstrap-->
               <link rel="stylesheet" type="text/css" href="<?=base_url()?>/assets/css/bootstrap.min.css"/>
               <script type="text/javascript" src="<?=base_url()?>/assets/js/bootstrap.min.js"></script>
-             
+               <script type="text/javascript" src="<?=base_url()?>/assets/js/scripts.js"></script>
      <?php
+             
            //css
     		echo link_tag('assets/css/Stylus.css');
     		echo link_tag('assets/css/Cores.css');

@@ -1,4 +1,7 @@
 <header>  
+	<div id= "teste">
+		<h1>TESTE</h1>
+	</div>
 <div class="container" id="cabeçalho" >   
 	<nav  class="navbar navbar-expand-lg navbar-dark  ">
    		<div class="" id="logo">
@@ -28,7 +31,7 @@
 			<li class="nav-item"> 
 				<a  href="<?= base_url()?>index.php/usuario/listar">Listar</a>
 =======
-				<a class="link_home" href="<?= base_url()?>index.php/usuario/cabecalho_teste">Cabeçalho Teste</a>
+				<a class="link_home" href="<?= base_url()?>index.php/usuario/cabecalho_teste">Cabeçalho Teste </a>
 >>>>>>> 5bc06cb2490796d1aa8f819ef3e51e744b366afd
 			</li>
 					<form class="form-inline  ml-auto" 	id="form-buscar">

@@ -41,33 +41,31 @@ class Produto extends CI_Controller {
 
 	public function editar($id){
 		//echo $id;
-		$this->load->model("Cadastro_model");
+		$this->load->model("Cadastro_Produto");
 		
 		if (!empty($_POST)) {
 
 			$this->load->model("Valida_model");
 
-			$existe = $this->Valida_model->verificarEmail($_POST["email"]);
+			$existe = $this->Valida_model->verificarProduto($_POST["nome"]);
 
 			if (empty($existe)) {
 				$this->Cadastro_model->editUsuario($id);
-				header('location:'.base_url()."usuario/listar");
+				header('location:'.base_url()."index.php/Produto/listar");
 			}
 
-			$dados = array( 'id' => $id,'email' => $_POST['email'], 'senha' => $_POST['senha'], 'nome' => $_POST['nome'], 'erro' => true );
+			$dados = array( 'id' => $id,'nome' => $_POST['nome'], 'habitat' => $_POST['habitat'], 'precokg' => $_POST['precokg'], 'erro' => true );
 
-			$this->load->view("menu");
-			$this->load->view("bem_vindo", $dados);
 		}else{
-			$result = $this->Cadastro_model->getUser($id);
+			$result = $this->Cadastro_Produto->getPeixes($id);
 
 			$nome = $result[0]['nome'];
-			$email = $result[0]['email'];
-			$senha = $result[0]['senha'];
+			$precokg= $result[0]['precokg'];
+			$habitat = $result[0]['habitat'];
 
-			$dados = array( 'id' => $id,'email' => $email, 'senha' => $senha, 'nome' => $nome, 'erro' => false );
-			$this->load->view("menu", array('voltar'=>true));
-			$this->load->view("bem_vindo", $dados);
+			$dados = array( 'id' => $id,'nome' => $nome, 'precokg' => $precokg, 'habitat' => $habitat, 'erro' => false );
+			
+			$this->load->view("listaPeixes", $dados);
 		}
 
 		

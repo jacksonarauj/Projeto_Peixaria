@@ -23,7 +23,7 @@
 				<?= $peixe['habitat'] ?>
 			</td>
 			<td>
-				<a href="../produto/editar/<?= $peixe['id_Peixe'] ?>">
+				<a href="produto/editar/<?= $peixe['id_Peixe'] ?>">
 					<input type="button" name="editar" value="editar">
 				</a>
 			</td>
