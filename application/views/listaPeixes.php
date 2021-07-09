@@ -1,54 +1,42 @@
 
-<div class="container">
-    
+<div class="container-fluid">
+			<div id="resultado">
+
 		
-		<table>
-			<th>ID</th>
-			<th>Nome</th>
-			<th>Preco por KG</th>
-			<th>Habitat</th>
-			<th>&nbsp;</th>
-			<tbody id="resultado">
-				
-			</tbody>
-			</table>
-	
-</div>
+	</div>
+
 </div>
 
 <script>
 	var resultadoBanco = document.getElementById('resultado')
 	console.log(resultadoBanco)
-
 	resultado.innerHTML = `
 	
 	<?php foreach ($peixes as $peixe) {		?>
+	    <div class="col-md-3">
 		<div class="card">
-		<div class="card-body">
-		
-		<tr>
-			<td>
-				#<?= $peixe['id_Peixe'] ?>
-			</td>
-			<td>
-				<?= $peixe['nome'] ?>
-			</td>
-			<td>
-				<?= $peixe['precokg'] ?>
-			</td>
-			<td>
-				<?= $peixe['habitat'] ?>
-			</td>
-			<td>
+			<!__aquitem que colocar o resultado do banco que futuramente vai trazer as img__>
+				<img src=" " class="card-img-top" ></img>
+			<div class="card-body"></div>
+			    
+				<h4 class="card-title">
+					<?= $peixe['nome'] ?>
+				</h4>
+				<p class="card-text">
 				
-				<a href="produto/editar/<?= $peixe['id_Peixe'] ?>">
+					<?= $peixe['precokg'] ?>
+				
+					<?= $peixe['habitat'] ?>
+				
+					#<?= $peixe['id_Peixe'] ?>
+				
+				</p>
+					<a href="produto/editar/<?= $peixe['id_Peixe'] ?>">
 					<input type="button" name="editar" value="editar">
-				</a>
-			</td>
-		</tr>
-		<br>
-		</tr>
-		</div>
+					</a>
+				
+        </div>
+	</div>
 </div>
 <?php } ?>
 
