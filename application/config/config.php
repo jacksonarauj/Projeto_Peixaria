@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //aqui estavav errado / estava escrito PROVAWEB/!!!!
-$config['base_url'] = 'http://localhost/Portfolio1/Projeto_Peixaria/';
+$config['base_url'] = 'http://localhost:8080/Projeto_Peixaria/';
 
 /*
 |--------------------------------------------------------------------------

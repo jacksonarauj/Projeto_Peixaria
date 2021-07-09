@@ -10,8 +10,7 @@
 
 
 .navbar{
-	max-width:100%;
-	background-color:red;	
+	max-width:100%;		
 	/*float: center;	*/
 }
 
@@ -93,4 +92,16 @@ ul li a{
 }
 ul{
 	list-style: none;
+}
+
+
+
+.divNav{
+	width: auto !important;
+}
+
+.areaUser{
+	margin-left: auto;
+	position: relative;
+	
 }
