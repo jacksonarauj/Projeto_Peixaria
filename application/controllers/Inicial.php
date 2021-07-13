@@ -13,6 +13,7 @@ class Inicial extends CI_Controller {
 		$this->load->view('html_header');
 		$this->load->view('cabeçalho');
         $this->load->view('home');
+		$this->load->view('menu_lado_esquerdo');
         $this->load->view('listaPeixes',$dados);
 		$this->load->view('footer');
 			
